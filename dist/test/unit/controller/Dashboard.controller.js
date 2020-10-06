@@ -1,0 +1,1 @@
+sap.ui.define(["project/ZMMDashboard/controller/Dashboard.controller"],function(o){"use strict";QUnit.module("Dashboard Controller");QUnit.test("I should test the Dashboard controller",function(t){var r=new o;r.onInit();t.ok(r)})});

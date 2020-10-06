@@ -1,0 +1,72 @@
+<mvc:View controllerName="project.ZMMDashboard.controller.Dashboard" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<subHeader>
+						<Toolbar>
+							<ToolbarSpacer/>
+							<Label text="Line of Business"/>
+							<Select id="drpLOB" change="_onChangeLOB">
+								<core:Item key="SD" text="Sales"/>
+								<core:Item key="MM" text="Materials Management"/>
+								<!--<core:Item key="FI" text="Finance"/>
+								<core:Item key="HCM" text="Human Capital Management"/>
+								<core:Item key="PP" text="Production Planning"/>-->
+							</Select>
+						</Toolbar>
+					</subHeader>
+					<content>
+						<Panel id="panel1" expandable="true" visible="true" expanded="true" headerText="Sales" width="auto" class="sapUiResponsiveMargin">
+							<content>
+								
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="10" title="Delivery Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="15" title="Billing Documennts" info="Sales" infoState="Success"/>
+								
+							</content>
+						</Panel>
+						<Panel id="panel2" expandable="true" visible="false" expanded="true" headerText="Materials Management" width="auto"
+							class="sapUiResponsiveMargin">
+							<content>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Purchase Requisitions" info="Materials Management" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="10" title="Purchase Orders" info="Materials Management" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="15" title="Purchase Contracts" info="Materials Management" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="20" title="Materials" info="Materials Management" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="20" title="Quotations" info="Materials Management" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="20" title="Invoices" info="Materials Management" infoState="Success"/>
+							</content>
+						</Panel>
+						<Panel id="panel3" expandable="true" visible="false" expanded="true" headerText="Finance" width="auto" class="sapUiResponsiveMargin">
+							<content>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+							</content>
+						</Panel>
+						<Panel id="panel4" expandable="true" visible="false" expanded="true" headerText="Human Capital Management" width="auto"
+							class="sapUiResponsiveMargin">
+							<content>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+							</content>
+						</Panel>
+						<Panel id="panel5" expandable="true" visible="false" expanded="true" headerText="Prodution Planning" width="auto"
+							class="sapUiResponsiveMargin">
+							<content>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+								<StandardTile icon="sap-icon://pie-chart" number="5" title="Sales Documents" info="Sales" infoState="Success"/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
